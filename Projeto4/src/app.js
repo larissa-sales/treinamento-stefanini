@@ -9,14 +9,14 @@ import './scss/app.scss';
 
 import routing from './app.config';
 
-import dono from './modulos/dono/dono.js';
+import bahia from './modulos/bahia/bahia.js';
 import home from './modulos/home/home.js';
 
 angular
 .module('myApp', [
   uirouter,
   blockUI,
-  dono, 
+  bahia, 
   home
 ])
 .config(routing);

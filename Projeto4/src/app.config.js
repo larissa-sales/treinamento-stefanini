@@ -10,14 +10,14 @@ export default function routing($stateProvider, $urlRouterProvider) {
       }
       $stateProvider.state(homeState);
       
-      let donoState = {
-        name: 'dono',
-        url: '/dono',
-        templateUrl: './modulos/dono/dono.view.html',
-        controller: 'DonoController',
+      let bahiaState = {
+        name: 'bahia',
+        url: '/bahia',
+        templateUrl: './modulos/bahia/bahia.view.html',
+        controller: 'BahiaController',
         controllerAs: 'vm'
       }
-      $stateProvider.state(donoState);
+      $stateProvider.state(bahiaState);
       
       $urlRouterProvider.otherwise('/home')  
 }

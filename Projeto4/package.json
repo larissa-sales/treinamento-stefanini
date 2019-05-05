@@ -1,7 +1,7 @@
 {
   "name": "teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Projeto frontend**",
   "main": "index.js",
   "scripts": {
     "build": "webpack --inline --hot",
