@@ -31,7 +31,7 @@ public class Praia implements Serializable{
 	@ManyToOne
 	@com.fasterxml.jackson.annotation.JsonIgnore
 	@JoinColumn(name = "DN_NU", referencedColumnName = "DN_NU")
-	private Bahia bahia;
+	private Parent parent;
 
 	public Praia() {
 		super();
@@ -51,12 +51,12 @@ public class Praia implements Serializable{
 		this.id = id;
 	}
 
-	public Bahia getBahia() {
-		return bahia;
+	public Parent getParent() {
+		return parent;
 	}
 
-	public void setBahia(Bahia bahia) {
-		this.bahia = bahia;
+	public void setParent(Parent parent) {
+		this.parent = parent;
 	}
 
 	public String getNome() {

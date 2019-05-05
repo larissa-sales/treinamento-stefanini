@@ -10,14 +10,14 @@ export default function routing($stateProvider, $urlRouterProvider) {
       }
       $stateProvider.state(homeState);
       
-      let bahiaState = {
-        name: 'bahia',
-        url: '/bahia',
-        templateUrl: './modulos/bahia/bahia.view.html',
-        controller: 'BahiaController',
+      let parentState = {
+        name: 'parent',
+        url: '/parent',
+        templateUrl: './modulos/parent/parent.view.html',
+        controller: 'ParentController',
         controllerAs: 'vm'
       }
-      $stateProvider.state(bahiaState);
+      $stateProvider.state(parentState);
       
       $urlRouterProvider.otherwise('/home')  
 }

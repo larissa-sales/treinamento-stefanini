@@ -9,14 +9,14 @@ import './scss/app.scss';
 
 import routing from './app.config';
 
-import bahia from './modulos/bahia/bahia.js';
+import parent from './modulos/parent/parent.js';
 import home from './modulos/home/home.js';
 
 angular
 .module('myApp', [
   uirouter,
   blockUI,
-  bahia, 
+  parent, 
   home
 ])
 .config(routing);
