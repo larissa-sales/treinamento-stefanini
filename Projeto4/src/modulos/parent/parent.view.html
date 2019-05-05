@@ -3,14 +3,21 @@
     <link rel="stylesheet" href="_css/form.css">
     <h1>Hello! Welcome to {{vm.name}}</h1>
 
+    Buscar pai:
+    <form>
+        <input type="text" name="" value="">
+    </form>
+
+    <br>
     Cadastre o estado!
     <br><br>
 
     <form class="form-group" action="index.html" method="post">
         <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <label for="nome">Estado:</label>
+            <input type="text" id="nome" placeholder="Nome" maxlength="20">
         </div>
+        <br>
         <div class="button">
             <button type="submit"> Enviar </button>
         </div>
@@ -18,6 +25,7 @@
 
     <div class="row">
 
+    <br>
     Veja aqui as praias!
     <br><br>
 
@@ -39,6 +47,8 @@
     </table>
 
     </div>
+
+    <button type="button" name="button"> Editar</button>
 
 </html>
 
