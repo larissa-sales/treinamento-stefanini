@@ -9,7 +9,7 @@ export default function routing($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
       $stateProvider.state(homeState);
-      
+
       let parentState = {
         name: 'parent',
         url: '/parent',
@@ -18,6 +18,15 @@ export default function routing($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
       $stateProvider.state(parentState);
-      
-      $urlRouterProvider.otherwise('/home')  
+
+      let cadastroState = {
+          name: 'cadastro',
+          url: '/cadastro',
+          templateUrl: './modulos/cadastro/cadastro.view.html',
+          controller: 'CadastroController',
+          controllerAs: 'vm'
+        }
+        $stateProvider.state(cadastroState);
+
+      $urlRouterProvider.otherwise('/home')
 }
