@@ -11,14 +11,14 @@ import routing from './app.config';
 
 import parent from './modulos/parent/parent.js';
 import home from './modulos/home/home.js';
-//import cadastro from '.modulos/cadastro/cadastro.js';
+import cadastro from './modulos/cadastro/cadastro.js';
 
 angular
 .module('myApp', [
   uirouter,
   blockUI,
   parent,
-  home
-  //cadastro
+  home,
+  cadastro
 ])
 .config(routing);

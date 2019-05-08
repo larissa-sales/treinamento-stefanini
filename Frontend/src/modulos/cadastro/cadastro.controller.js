@@ -5,13 +5,12 @@ export default class CadastroController {
   constructor(cadastroService) {
     var vm = this;
     this.name = 'Cadastro';
+    vm.salvar = salvar;
 
-    init();
-
-    function init(){
-      cadastroService.getCadastros().then(function abc(resp) {
-        vm.cadastros = resp.data;
-      });
+    function salvar(){
+        //debugger;
+        vm.estado;
+        cadastroService.salvar(vm.estado);
     }
   }
 

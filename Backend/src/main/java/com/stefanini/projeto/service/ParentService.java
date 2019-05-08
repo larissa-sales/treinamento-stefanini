@@ -18,5 +18,9 @@ public class ParentService {
 	public List<Parent> findAll() throws TreinaException {
 		return (List<Parent>) repository.findAll();
 	}
+	
+	public Parent salvar(Parent parent) throws TreinaException {
+		return repository.save(parent);
+	}
 
 }

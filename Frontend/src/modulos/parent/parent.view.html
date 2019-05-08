@@ -22,10 +22,10 @@
         </tr>
         </thead>
         <tbody ng-repeat='parent in vm.parents'>
-            <tr ng-repeat='praia in parent.praias'>
+            <tr >
                 <td><b>{{$index+1}}</b></td>
                 <td>{{parent.nome}}</td>
-                <td>{{praia.nome}}</td>
+                <td>{{parent.praias.length}}</td>
         </tr>
         </tbody>
     </table>
@@ -33,9 +33,9 @@
     </div>
 
     <body>
-    <button type="button" name="button" onclick="alert('Praia cadastrada')"> Cadastrar uma praia! </button>
+    <button type="button" name="button" onclick="location.href='http://localhost:9001/#!/cadastro';"> Cadastrar uma praia! </button>
     <br><br>
-    <button type="button" name="button" onclick="getElementById('test').innerHTML = Date()"> Editar a lista </button>
+    <button type="button" name="button"> Editar a lista </button>
     <p id="test"></p>
 
 

@@ -1,17 +1,26 @@
 <div class="jumbotron">
     <link rel="stylesheet" href="_css/form.css">
-    <h1>Cadastre o estado desejado aqui!</h1>
+    <h1>Cadastre sua lista aqui!</h1>
 
     <br><br>
 
-    <form class="form-group" action="./parent" method="post">
+    <form class="form-group">
         <div>
             <label for="nome">Estado:</label><br>
+            <input type="text" ng-model="vm.estado.nome" id="estado_nome" placeholder="Nome" maxlength="20" size="30">
+            <button ng-click="vm.salvar()">Cadastrar</button>
+        </div>
+    </form
+
+    <form class="form-group" action="" method="post">
+        <div>
+            <label for="nome">Praia:</label><br>
             <input type="text" id="estado_nome" placeholder="Nome" maxlength="20" size="30">
-            <button type="submit" onclick="location.href='http://localhost:9001/#!/parent';"="parent">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
         </div>
     </form>
 
-
+    <br>
+    <button type="button" name="button" onclick="location.href='http://localhost:9001/#!/parent';">Ver Lista</button>
     </div>
 </div>
