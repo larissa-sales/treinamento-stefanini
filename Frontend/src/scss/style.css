@@ -1,3 +1,10 @@
 .jumbotron {
     padding: 6rem 2rem !important;
 }
+
+.buttonalign {
+    position: relative; 
+    left:50%;
+}
+
+#button{ justify-content: center }

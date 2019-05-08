@@ -1,8 +1,16 @@
 <div class="jumbotron">
     <link rel="stylesheet" href="_css/form.css">
-    <h1>Você está na tela de {{vm.name}}</h1>
+    <h1>Cadastre o estado desejado aqui!</h1>
 
-    <div class="row">
+    <br><br>
+
+    <form class="form-group" action="./parent" method="post">
+        <div>
+            <label for="nome">Estado:</label><br>
+            <input type="text" id="estado_nome" placeholder="Nome" maxlength="20" size="30">
+            <button type="submit" onclick="location.href='http://localhost:9001/#!/parent';"="parent">Cadastrar</button>
+        </div>
+    </form>
 
 
     </div>
