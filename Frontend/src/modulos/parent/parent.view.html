@@ -1,24 +1,25 @@
 <div class="jumbotron">
 
     <link rel="stylesheet" href="_css/form.css">
-    <h1>Veja aqui a lista de praias!</h1>
+    <h1>Veja aqui a lista de Praias!</h1>
+    <hr class="my-4">
 
     <br>
-    <form>
-        <input type="text" placeholder="Digite aqui">
-        <button type="submit">Buscar</button>
+    <form class="form-inline">
+        <input type="search" class="form-control mr-sm-2" placeholder="Digite aqui" size="30">
+        <button type="submit" class="btn btn-info">Buscar</button>
     </form>
 
     <br>
 
 
     <div class="row">
-    <table class="table table-hover table-dark">
-        <thead>
+    <table class="table table-hover table-light table-bordered">
+        <thead class="table-info">
         <tr>
             <th scope="col">#</th>
             <th scope="col">Estado</th>
-            <th scope="col">Praia</th>
+            <th scope="col">Praias Vinculadas</th>
         </tr>
         </thead>
         <tbody ng-repeat='parent in vm.parents'>
@@ -33,9 +34,9 @@
     </div>
 
     <body>
-    <button type="button" name="button" onclick="location.href='http://localhost:9001/#!/cadastro';"> Cadastrar uma praia! </button>
+    <button type="button" name="button" class="btn btn-info" onclick="location.href='http://localhost:9001/#!/cadastro';"> Cadastrar uma praia </button>
     <br><br>
-    <button type="button" name="button"> Editar a lista </button>
+    <button type="button" name="button" class="btn btn-info"> Editar lista </button>
     <p id="test"></p>
 
 

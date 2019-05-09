@@ -1,26 +1,26 @@
 <div class="jumbotron">
     <link rel="stylesheet" href="_css/form.css">
     <h1>Cadastre sua lista aqui!</h1>
+    <hr class="my-4">
 
-    <br><br>
-
-    <form class="form-group">
+    <br>
+    <form class="form-inline">
         <div>
-            <label for="nome">Estado:</label><br>
-            <input type="text" ng-model="vm.estado.nome" id="estado_nome" placeholder="Nome" maxlength="20" size="30">
-            <button ng-click="vm.salvar()">Cadastrar</button>
-        </div>
-    </form
-
-    <form class="form-group" action="" method="post">
-        <div>
-            <label for="nome">Praia:</label><br>
-            <input type="text" id="estado_nome" placeholder="Nome" maxlength="20" size="30">
-            <button type="submit">Cadastrar</button>
+            <input type="text" class="form-control mr-sm-2" ng-model="vm.estado.nome" id="estado_nome" placeholder="Estado" maxlength="20" size="30">
+            <button class="btn btn-info" ng-click="vm.salvar()"> Cadastrar </button>
         </div>
     </form>
 
     <br>
-    <button type="button" name="button" onclick="location.href='http://localhost:9001/#!/parent';">Ver Lista</button>
+
+    <form class="form-inline">
+        <div>
+            <input type="text" class="form-control mr-sm-2" id="praia_nome" placeholder="Praia" maxlength="20" size="30">
+            <button class="btn btn-info"> Cadastrar </button>
+        </div>
+    </form>
+
+    <br>
+    <button type="button" name="button" class="btn btn-info" onclick="location.href='http://localhost:9001/#!/parent';">Ver Lista</button>
     </div>
 </div>
