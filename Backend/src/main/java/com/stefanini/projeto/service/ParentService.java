@@ -22,5 +22,9 @@ public class ParentService {
 	public Parent salvar(Parent parent) throws TreinaException {
 		return repository.save(parent);
 	}
-
+	
+/*	public Parent deletar(Parent parent) throws TreinaException {
+		return repository.delete(parent);
+	}
+*/
 }

@@ -8,9 +8,13 @@ class ParentService {
         const apiBase = "http://localhost:8080";
         this.path =  apiBase + "/parent";
     }
-    
+
     getParents() {
         return this.$http.get(this.path);
+    }
+
+    deletar(estado){
+        this.$http.delete(this.path, estado);
     }
 }
 

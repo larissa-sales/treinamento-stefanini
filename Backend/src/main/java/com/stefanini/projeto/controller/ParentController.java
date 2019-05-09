@@ -32,5 +32,10 @@ public class ParentController {
 	public @ResponseBody Parent salvar(@RequestBody Parent parent) throws TreinaException {
 		return service.salvar(parent);
 	}	
+	
+/*	@RequestMapping(method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody Parent deletar(@RequestBody Parent parent) throws TreinaException {
+		return service.deletar(parent);
+	}*/	
 
 }

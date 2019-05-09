@@ -5,6 +5,7 @@ export default class ParentController {
   constructor(parentService) {
     var vm = this;
     this.name = 'Parent';
+    vm.deletar = deletar;
 
     init();
 
@@ -13,7 +14,13 @@ export default class ParentController {
         vm.parents = resp.data;
       });
     }
+
+    function deletar(){
+        debugger;
+        vm.parents;
+        parentService.deletar(vm.parents);
+    }
   }
-  
+
 }
 ParentController.$inject = ['parentService'];
